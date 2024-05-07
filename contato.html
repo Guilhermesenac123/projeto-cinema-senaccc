@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./outros.css">
+    <title>Cinema Cinesenac - Localização</title>
+</head>
+
+<body>
+
+   <!--1° Cabeçalho-------------------------------->
+   <header>
+    <!--adicionando uma imagem-->
+    <!--nome da tag img é id="logo"-->
+    <img id="logo" src="./img/fundos-do-batman.jpg" alt="Logo Batman">
+    <!--Criando nossa  barra de navegação com as tags nav e lista com ul e li-->
+    <nav>
+        <!--Criando nossa  lista com os links das páginas-->
+        <ul>
+            <a href="./index.html">
+                <li>Home</li>
+            </a>
+            <!--link 2---------------->
+            <a href="./contato.html">
+                <li>Contato</li>
+            </a>
+            <!--link3------->
+            <a href="./fotos.html">
+                <li>Fotos</li>
+            </a>
+            <!--link4------>
+            <a href="./localizacao.html">
+                <li>Localização</li>
+            </a>
+        </ul>
+
+    </nav>
+
+</header>
+<!----------------Cabeçalho finalizado--------------------------->
+<!--------------------------Iniciando banner---------------------------------------->
+<div id="banner"></div>
+
+<div class="contato"> 
+
+<h1>formulario de contato</h1>
+
+</div>
+
+<!-----Formulario----->
+
+<div class="form-container">
+
+<form class="formulario" action="https://formsubmit.co/mc2397818@gmail.com" method="POST">
+
+<div>
+<input type="hidden" name="_next" value="./sucesso.html">
+</div>
+<!-- responde a pessoa que enviou o email -->
+<div>
+<input type="hidden" name="_autoresponse" value="recebemos a mensagem, obrigado pelo contato e logo respondemos">
+</div>
+
+<div>
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" required placeholder="Digite um nome">
+
+</div>
+
+<div>
+    <label for="telefone">telefone:</label>
+    <input type="text" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+
+    </div>
+
+    <div>
+        <label for="e-mail">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Digite seu email">
+    
+        </div>
+    
+        <div>
+            <label for="assuto">Assaunto:</label>
+            <input type="text" id="assunto" name="assunto" required placeholder="Assunto">
+        
+            </div>
+        <div>
+            <label for="msg">Mensagem: </label>
+            <textarea id="msg" name="msg" required="" rows="10" placeholder="Mensagem"></textarea>
+        </div>
+            <div>
+            <button type="submit">Enviar sua mensagem</button>
+        </div>
+</form>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- footer rodapé colocamos a logo nessa imagem 
+(todos os direitos reservados ),(pot quem foi desenvolvido a pagina)
+iremos ter uma navegação quando for usar o celular -->
+<!-- seja redimensionada para caber compltamente dentro do container mantendo sua progranação original 
+style="object-fit: contain;"-->
+<footer>
+<img id="logo" style="object-fit:contain ;" src="./img/logo-batman.png" alt="logo batman" >
+<span class="footer-texto">desenvolvido por: Matheus da Cruz da silva </span>
+<nav class="footer-navigation">
+    <!--Criando nossa  lista com os links das páginas-->
+    <ul class="footer-list">
+        <a href="./index.html">
+            <li>Home</li>
+        </a>
+        <!--link 2---------------->
+        <a href="./contato.html">
+            <li>Contato</li>
+        </a>
+        <!--link3------->
+        <a href="./fotos.html">
+            <li>Fotos</li>
+        </a>
+        <!--link4------>
+        <a href="./localizacao.html">
+            <li>Localização</li>
+        </a>
+    </ul>
+
+</nav>
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+* {
+    color: #ffffff;
+ 
+ }
+ 
+ h1 {
+  text-align: center; /*alinha o texto no centro */
+  font-size: 20px; /*tamanho da fonte*/
+  margin-top: 30px;
+ }
+ 
+ .localizacao{
+ width: 100px;
+ display: flex; /*abri o flex para utilizar as propriedades dele */
+ flex-direction: column; /*deixando os elementos filhos em colunas*/
+ align-items: center;/*deixando os elementos alinhados horizontalmente*/
+ justify-content: center; /*deixando oselementos centralizados horizontalmente*/
+ 
+ }
+ 
+ .localizacao iframe {
+  border-radius: 15px;
+  margin: 30px;
+ 
+ 
+ }
+ 
+ /* ---------------- galeria de fotos -------------------------- */
+ 
+ .galeria-container{
+ display: flex; /*alinhando lado a lado*/
+ flex-wrap: wrap; /*se os itens não caliibrarem mais uma linha elex irão quebrar para uma proxima linha */
+ justify-content: space-around;
+ gap: 2vw;
+ margin-top: 30px;
+ 
+ }
+ 
+ .galeria-itens {
+ height: 250px;
+ width: 300px;
+ border:10px solid #ffffff;
+ flex-grow: 1; /*o que isso faz é */
+ transition: 1s;
+ }
+ 
+ .galeria-itens img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;/*deve ser posicionado e dimensionado dentro de seu container mantendo sua proporção original e calibrado todo o espaço disponivel*/
+    
+    }
+ 
+    .galeria-itens:hover{
+  transform: scale(1.2);
+ border-color: red;
+ border-radius: 10px;
+ 
+    }
+ 
+    .contato {
+ margin-bottom: 30px
+ 
+    }
+ .form-container {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 80vh;
+ }
+ 
+ .formulario div {
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 15px;
+ 
+ }
+ 
+ .formulario input, .formulario textarea {
+ color: red;
+ width: 300px;
+ border: 2px solid red;
+ border-radius: 10px;
+ }
+ 
+ .formulario button {
+ color: #ffffff;
+ background-color: red;
+ padding: 15px;
+ font-size: 16px;
+ cursor: pointer;
+ border-radius: 10px;
+ }
+
+ /*----Resposividade----*/
+@media(max-width:768px){
+   .localizacao iframe{
+      width: 95%;
+   }
+}
